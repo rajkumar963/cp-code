@@ -173,43 +173,98 @@
     // #include <iostream>
     // #include <cctype>
     // using namespace std;
-
     // int main() {
     //     string word;
     //     cin >> word;
-        
     //     if (!word.empty()) {
     //         word[0] = toupper(word[0]);
     //     }
-        
     //     cout << word << endl;
-        
     //     return 0;
     // }
     
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//   int n,x,a[100];
+//   int i;
+//   cin>>n;
+//   for(int i=1;i<=n;i++){
+//   cin>>a[i];
+//   }
+//   for(int i=1;i<=n;i++){
+// //   if(a[i]%2==0){
+// //     cout<<"YES"<<endl;
+// //   }
+//   if ((a[i] & (a[i]-1))){
+//     cout<<"YES"<<endl;
+//   }else{
+//     cout<<"NO"<<endl;
+//   }
+//   }
+//    return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int posible(int n, int a[])
+// {
+//   for(int i=1;i<=n;i++)
+//   {
+//     if(a[i]-a[i-1]>1)
+//     {
+//         cout<<"YES"<<endl;
+//     }
+//   }
+//         cout<<"NO"<<endl;
+// }
+// int main(){
+//   int t,i;
+//   cin>>t;
+//   int n;
+//   for(int i=1;i<=t;t--){
+//       cin>>n;
+//       int a[n];
+//       for(int j=0;j<n;j++){
+//         cin>>a[i];
+//       }}
+//       int a[n];
+//       posible(n,a);
+  
+// return 0;
+
+// }
+
 #include<iostream>
 using namespace std;
-int main()
-{
-  int n,x,a[100];
-  int i;
-  cin>>n;
-  for(int i=1;i<=n;i++){
-  cin>>a[i];
-  }
-  for(int i=1;i<=n;i++){
-//   if(a[i]%2==0){
-//     cout<<"YES"<<endl;
-//   }
-  if ((a[i] & (a[i]-1))){
-    cout<<"YES"<<endl;
-  }else{
-    cout<<"NO"<<endl;
-  }
-  }
-   return 0;
+
+void possible(int n, int a[]) {
+    for(int i = 1; i < n; i++) {
+        if(a[i] - a[i-1] > 1) {
+            cout << "NO" << endl;
+            return;
+        }
+    }
+    cout << "YES" << endl;
 }
 
-
-
+int main() {
+    int t,n;
+    cin >> t;
+    
+    while(t--) {
+        int n;
+        cin >> n;
+        int a[n];
+        for(int i = 0; i < n; i++) {
+            cin >> a[i];
+        }
+        // possible(n, a);
+    }
+    
+    
+    return 0;
+}

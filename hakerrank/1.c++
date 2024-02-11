@@ -46,18 +46,52 @@
 // }
 
 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int x,y;
+//     cin>>x>>y;
+// 	// your code goes here
+// 	if(x*2>y){
+// 	    cout<<"YES";
+// 	}
+// 	else{
+// 	    cout<<"NO";
+// 	}
+// 	return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int t;
+//     cin>>t;
+// 	int x,y;
+// 	for(int i=1;i<=t;i++){
+// 	    cin>>x>>y;
+// 		cout<<x-y<<endl;	
+// 	}
+// 	// for(int i=1;i<=t;i++){
+// 	//   cout<<x-y<<endl;	
+// 	// }
+// 	return 0;
+
+// }
+
+
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int x,y;
-    cin>>x>>y;
-	// your code goes here
-	if(x*2>y){
-	    cout<<"YES";
-	}
-	else{
-	    cout<<"NO";
-	}
-	return 0;
-}
+	int t;
+	cin>>t;
+	int a,b,c,x;
+	for(int i=1;i<=t;i++){
+	    cin>>a>>b>>c>>x;
+	
+	    if((a+b)>=x||(b+c)>=x||(a+c)>=x){
+	        cout<<"YES"<<endl;
+	    }else{
+	        cout<<"NO"<<endl;
+	    }
+	}}
