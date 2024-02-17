@@ -233,38 +233,99 @@
 //       }}
 //       int a[n];
 //       posible(n,a);
-  
-// return 0;
+  // return 0;
 
 // }
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// void possible(int n, int a[]) {
+//     for(int i = 1; i < n; i++) {
+//         if(a[i] - a[i-1] > 1) {
+//             cout << "NO" << endl;
+//             return;
+//         }
+//     }
+//     cout << "YES" << endl;
+// }
+
+// int main() {
+//     int t,n;
+//     cin >> t;
+    //     while(t--) {
+//         int n;
+//         cin >> n;
+//         int a[n];
+//         for(int i = 0; i < n; i++) {
+//             cin >> a[i];
+//         }
+//         // possible(n, a);
+//     }
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int t;
+//     cin>>t;
+//     int n,x,y;
+//     while(t--){
+//         cin>>n;
+//         int arr1[2*n],arr2[2*n];
+//         for(int j=1;j<=2*n;j++){
+//             cin>>arr1[j]>>arr2[j];
+//             }
+//                  for(int i=1;i<=n;i++){
+        
+//         if(arr1[x]==arr2[y]){
+//           min1=arr1[x];
+//         }
+//         if(arr1[x]<arr2[y]){
+//              min2=arr1[x];
+//         }else{
+//              min2=arr2[y];
+//         }
+        
+//     }
+//     cout<<min1+min2<<endl;
+
+//         }
+     
+// }
+
+
+#include <iostream>
+#include <algorithm> 
+
 using namespace std;
 
-void possible(int n, int a[]) {
-    for(int i = 1; i < n; i++) {
-        if(a[i] - a[i-1] > 1) {
-            cout << "NO" << endl;
-            return;
-        }
-    }
-    cout << "YES" << endl;
-}
-
 int main() {
-    int t,n;
-    cin >> t;
-    
-    while(t--) {
-        int n;
-        cin >> n;
-        int a[n];
-        for(int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
-        // possible(n, a);
-    }
-    
-    
+   int t;
+   cin >> t;
+   while(t--) {
+       int n;
+       cin >> n;
+       int arr1[n], arr2[n];
+       for(int i = 0; i < 2 * n; i++) {
+           if(i % 2 == 0)
+               cin >> arr1[i / 2];
+           else
+               cin >> arr2[i / 2];
+       }
+       int sum = 0;
+       for(int i = 0; i < n; i++) {
+           sum += min(arr1[i], arr2[i]);
+       }
+       cout << sum << endl;
+   }
+
     return 0;
 }
+
+
+
+
+
