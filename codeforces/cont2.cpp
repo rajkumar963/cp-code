@@ -297,35 +297,76 @@
 // }
 
 
-#include <iostream>
-#include <algorithm> 
+// #include <iostream>
+// #include <algorithm> 
 
+// using namespace std;
+
+// int main() {
+//    int t;
+//    cin >> t;
+//    while(t--) {
+//        int n;
+//        cin >> n;
+//        int arr1[n], arr2[n];
+//        for(int i = 0; i < 2 * n; i++) {
+//            if(i % 2 == 0)
+//                cin >> arr1[i / 2];
+//            else
+//                cin >> arr2[i / 2];
+//        }
+//        int sum = 0;
+//        for(int i = 0; i < n; i++) {
+//            sum += min(arr1[i], arr2[i]);
+//        }
+//        cout << sum << endl;
+//    }
+
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//       char s[100];
+//       cin>>s;
+//       int count1=0,count2=0;
+//       for(int i=0;s[i]!='\0';i++){
+//           if(s[i]=='A'){
+//               count1++;
+//           }else{
+//               count2++;
+//           }
+//       }
+//         if(count1>count2){
+//             cout<<"A"<<endl;
+//         }else{
+//             cout<<"B"<<endl;
+//         }
+        
+//     }
+// }
+
+
+#include<iostream>
 using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n,sum=0;
+        cin>>n;
+        for(int i=1;i<=n;i++){
+           sum=sum+i%10; 
+           i/=10;
 
-int main() {
-   int t;
-   cin >> t;
-   while(t--) {
-       int n;
-       cin >> n;
-       int arr1[n], arr2[n];
-       for(int i = 0; i < 2 * n; i++) {
-           if(i % 2 == 0)
-               cin >> arr1[i / 2];
-           else
-               cin >> arr2[i / 2];
-       }
-       int sum = 0;
-       for(int i = 0; i < n; i++) {
-           sum += min(arr1[i], arr2[i]);
-       }
-       cout << sum << endl;
-   }
-
-    return 0;
+        }
+        cout<<sum<<endl;
+    }
 }
-
-
-
 
 
