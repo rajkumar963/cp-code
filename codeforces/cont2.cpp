@@ -352,21 +352,28 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int n,sum=0;
+//         cin>>n;
+//         for(int i=1;i<=n;i++){
+//            sum=sum+i%10; 
+//            i/=10;
+//         }
+//         cout<<sum<<endl;
+//     }
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        int n,sum=0;
-        cin>>n;
-        for(int i=1;i<=n;i++){
-           sum=sum+i%10; 
-           i/=10;
+    int n, t[n];
+    
 
-        }
-        cout<<sum<<endl;
-    }
 }
-
 

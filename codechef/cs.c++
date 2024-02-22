@@ -60,26 +60,56 @@
 // }
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+// 	int t;
+// 	cin>>t;
+// 	int x;
+// 	for(int i=1;i<=t;i++){
+// 	    cin>>x;
+// 	    if(x<=100){
+// 	        cout<<x<<endl;
+// 	    }
+// 	    if(x>100 && x<=1000){
+// 	        cout<<x-25<<endl;
+// 	    }
+// 	    if(x>1000 && x<5000){
+// 	        cout<<x-100<<endl;
+// 	    }
+// 	    if(x>5000){
+// 	        cout<<x-500<<endl;
+// 	    }
+// 	}
+// }
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	int t;
-	cin>>t;
-	int x;
-	for(int i=1;i<=t;i++){
-	    cin>>x;
-	    if(x<=100){
-	        cout<<x<<endl;
-	    }
-	    if(x>100 && x<=1000){
-	        cout<<x-25<<endl;
-	    }
-	    if(x>1000 && x<5000){
-	        cout<<x-100<<endl;
-	    }
-	    if(x>5000){
-	        cout<<x-500<<endl;
-	    }
-	}
+    int t;
+    cin>>t;
+     int n;
+     while(t--){
+        cin>>n;
+		 int s[n];
+        for(int i=0;i<n;i++){
+			cin>>s[i];
+		}
+          bool check = true;
+		 for(int i=0;i<n;i++){
+			if(s[i]<=4){
+				check = false;
+				break;
+			}
+		 }	
+       if(check){
+			cout<<"YES"<<endl;}
+		else{
+			cout<<"NO"<<endl;
+		}
+    
+}
 }
