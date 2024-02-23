@@ -1,15 +1,12 @@
 // #include <iostream>
 // using namespace std;
-
 // int main() {
 //     int t;
 //     cin >> t;
-    
-//     while (t--) {
+    //     while (t--) {
 //         int n;
 //         cin >> n;
-        
-//         int max_people, min_people;
+        //         int max_people, min_people;
 //         if (n == 1 || n == 2 || n == 3) {
 //             max_people = 1;
 //             min_people = 1;
@@ -17,11 +14,9 @@
 // 			            max_people = (n % 2 == 0) ? n / 2 : (n + 1) / 2;
 //             min_people = 1;
 //         }
-        
-//         cout << max_people << " " << min_people << endl;
+        //         cout << max_people << " " << min_people << endl;
 //     }
-    
-//     return 0;
+    //     return 0;
 // }
 
 
@@ -48,7 +43,6 @@
 
 // #include <bits/stdc++.h>
 // using namespace std;
-
 // int main() {
 // 	int t;
 // 	cin>>t;
@@ -56,14 +50,12 @@
 // 	for(int i=1;i<=t;i++){
 // 	    cin>>x>>y>>z;
 // 	}
-
 // }
 
 
 // #include <bits/stdc++.h>
 // using namespace std;
-
-// int main() {
+//int main() {
 // 	int t;
 // 	cin>>t;
 // 	int x;
@@ -85,31 +77,60 @@
 // }
 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int t;
+//     cin>>t;
+//      int n;
+//      while(t--){
+//         cin>>n;
+// 		 int s[n];
+//         for(int i=0;i<n;i++){
+// 			cin>>s[i];
+// 		}
+//           bool check = true;
+// 		 for(int i=0;i<n;i++){
+// 			if(s[i]<=4){
+// 				check = false;
+// 				break;
+// 			}
+// 		 }	
+//        if(check){
+// 			cout<<"YES"<<endl;}
+// 		else{
+// 			cout<<"NO"<<endl;
+// 		}
+    // }
+// }
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t;
-    cin>>t;
-     int n;
-     while(t--){
-        cin>>n;
-		 int s[n];
-        for(int i=0;i<n;i++){
-			cin>>s[i];
-		}
-          bool check = true;
-		 for(int i=0;i<n;i++){
-			if(s[i]<=4){
-				check = false;
-				break;
-			}
-		 }	
-       if(check){
-			cout<<"YES"<<endl;}
-		else{
-			cout<<"NO"<<endl;
-		}
-    
-}
+	int t;
+	cin>>t;
+	int n,count=0;
+	while(t--){
+	    cin>>n;
+	    int d[n];
+	    for(int i=0;i<n;i++){
+	        cin>>d[i];
+	    }
+		for(int i=0;i<n;i++){
+			 if(d[i]>=1000){
+	         count=count+1;
+			 }else
+			 {
+			 count=0;
+			 }
+
+	    }
+	    if(count>0)
+	    cout<<count<<endl;
+	    else
+	    cout<<"0"<<endl;
+	}
 }
