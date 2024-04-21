@@ -324,21 +324,48 @@
 // }
 
 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+// int main() {
+// 	int t;
+// 	cin >> t;
+// 	while(t--){
+// 	    int n,x;
+// 	    cin >> n >> x;
+// 	    int mx = 0;
+// 	    for(int i = 1; i <= n; i++){
+// 	        int s,r;
+// 	        cin >> s >> r;
+// 	        if(s <= x) mx = max(mx,r);
+// 	    }
+// 	    cout << mx << endl;
+// 	}
+// }
+
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
+	// your code goes here
 	int t;
-	cin >> t;
+	cin>>t;
+	int a,b,rev1=0,rev2=0;
 	while(t--){
-	    int n,x;
-	    cin >> n >> x;
-	    int mx = 0;
-	    for(int i = 1; i <= n; i++){
-	        int s,r;
-	        cin >> s >> r;
-	        if(s <= x) mx = max(mx,r);
-	    }
-	    cout << mx << endl;
+	    cin>>a>>b;
+		for(int i=1;i<=2;i++){
+	    int x=a%10;
+	    rev1=rev1*10+x;
+	    a/=10;}
+		for(int i=1;i<=2;i++){
+	    int x=b%10;
+	    rev2=rev2*10+x;
+	    b/=10;}
+
+	    if(rev1>rev2) 
+		cout<<"YES"<<endl;
+		else
+		cout<<"NO"<<endl;
 	}
+	
+
 }
