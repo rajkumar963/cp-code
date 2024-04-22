@@ -239,26 +239,75 @@
 // }
 
 // Anton and Danik
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     string s;
+//     cin>>s;
+//     int a=0,b=0;
+//     for(int i=0;i<n;i++){
+//         if(s[i]=='A'){
+//             a++;
+//         }else{
+//             b++;
+//         }
+//     }
+//     if(a>b){
+//         cout<<"Anton"<<endl;
+//     }else if(a<b){
+//         cout<<"Danik"<<endl;
+//     }else{
+//         cout<<"Friendship"<<endl;
+//     }
+// }
+
+// Tram
+#include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int n;
-    cin>>n;
-    string s;
-    cin>>s;
-    int a=0,b=0;
-    for(int i=0;i<n;i++){
-        if(s[i]=='A'){
-            a++;
-        }else{
-            b++;
-        }
+    cin >> n;
+
+    int max_capacity = 0;
+    int current_capacity = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        int a, b;
+        cin >> a >> b;
+        current_capacity = current_capacity - a + b;
+
+        max_capacity = max(max_capacity, current_capacity);
     }
-    if(a>b){
-        cout<<"Anton"<<endl;
-    }else if(a<b){
-        cout<<"Danik"<<endl;
-    }else{
-        cout<<"Friendship"<<endl;
-    }
+
+    cout << max_capacity << endl;
+
+    return 0;
 }
+
+// Recursive Super Digit
+//  #include<bits/stdc++.h>
+//  using namespace std;
+//  int FirstSum(long long n){
+//      int sum=0;
+//      while(n>0){
+//          sum=sum+n%10;
+//          n=n/10;
+//      }
+//      if (sum>9){
+//         return FirstSum(sum);
+//      }
+//      else
+//          return sum;
+//  }
+//  int main(){
+//      long long n,k;
+//      cin>>n>>k;
+//      n=FirstSum(n)*k;
+//      cout<<FirstSum(n);
+//  }
+
+//
