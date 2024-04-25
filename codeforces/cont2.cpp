@@ -369,11 +369,78 @@
 // }
 
 
-#include<iostream>
+
+// #include <iostream>
+// #include <vector>
+// #include <algorithm>
+
+// using namespace std;
+
+// int main() {
+//     int T;
+//     cin >> T;
+
+//     while (T--) {
+//         int N, X, Y;
+//         cin >> N >> X >> Y;
+
+//         vector<int> difficulties(N);
+//         for (int i = 0; i < N; i++) {
+//             cin >> difficulties[i];
+//         }
+
+//         // Sort difficulties in descending order
+//         sort(difficulties.begin(), difficulties.end(), greater<int>());
+
+//         int cost = 0;
+//         for (int difficulty : difficulties) {
+//             // If using a Master Pekóball is cheaper, use it
+//             if (Y < X * difficulty) {
+//                 cost += Y;
+//             } else {
+//                 cost += X * difficulty;
+//             }
+//         }
+
+//         cout << cost << endl;
+//     }
+
+//     return 0;
+// }
+
+
+#include <bits/stdc++.h>
+#include<vector>
+#include<algorithm>
+
 using namespace std;
-int main(){
-    int n, t[n];
-    
+
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	int n,x,y;
+	while(t--){
+	   cin>>n>>x>>y;
+         vector<int> arr(n);
+	    for(int i=0;i<n;i++){
+	        cin>>arr[i];
+	    }
+	    sort(arr.begin(), arr.end(), greater<int>());
+
+        int cost = 0;
+        for (int diff : arr) {
+
+            if (y < x * diff) {
+                cost += y;
+            } else {
+                cost += x * diff;
+            }
+        }
+
+        cout << cost << endl;
+	    
+	}
 
 }
-

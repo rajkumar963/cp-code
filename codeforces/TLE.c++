@@ -264,29 +264,24 @@
 // }
 
 // Tram
-#include <iostream>
-using namespace std;
-int main()
-{
-    int n;
-    cin >> n;
-
-    int max_capacity = 0;
-    int current_capacity = 0;
-
-    for (int i = 0; i < n; i++)
-    {
-        int a, b;
-        cin >> a >> b;
-        current_capacity = current_capacity - a + b;
-
-        max_capacity = max(max_capacity, current_capacity);
-    }
-
-    cout << max_capacity << endl;
-
-    return 0;
-}
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     int max_capacity = 0;
+//     int current_capacity = 0;
+//     for (int i = 0; i < n; i++)
+//     {
+//         int a, b;
+//         cin >> a >> b;
+//         current_capacity = current_capacity - a + b;
+//         max_capacity = max(max_capacity, current_capacity);
+//     }
+//       cout << max_capacity << endl;
+//   return 0;
+// }
 
 // Recursive Super Digit
 //  #include<bits/stdc++.h>
@@ -310,4 +305,52 @@ int main()
 //      cout<<FirstSum(n);
 //  }
 
-//
+
+//Nearly Lucky Number
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int countLuckyDigits(long long n) {
+//     int count = 0;
+//     while (n > 0) {
+//         int digit = n % 10;
+//         if (digit == 4 || digit == 7) {
+//             count++;
+//         }
+//         n /= 10;
+//     }
+//     return count;
+// }
+// bool isLucky(int n) {
+//     return n == 4 || n == 7;
+// }
+// int main() {
+//     long long n;
+//     cin >> n;
+//  int luckyCount = countLuckyDigits(n);
+//     if (isLucky(luckyCount)) {
+//         cout << "YES" << endl;
+//     } else {
+//         cout << "NO" << endl;
+//     }
+//     return 0;
+// }
+
+
+//Wrong Subtraction
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int n, k;
+//     cin >> n >> k;
+//      for (int i = 0; i < k; i++) {
+//         if (n % 10 != 0) {
+//             n--;
+//         } else {
+//             n /= 10;
+//         }
+//     }
+//     cout << n << endl;
+//    return 0;
+// }
+
