@@ -354,3 +354,23 @@
 //    return 0;
 // }
 
+//Vanya and Fence
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n,k;
+//     cin>>n>>k;
+//     int arr[n];
+//     int w=0;
+//     for(int i=0;i<n;i++){
+//         cin>>arr[i];
+//     }
+    //         for(int i=0;i<n;i++){
+//             if(arr[i]>k){
+//                 w=w+2;
+//             }else{
+//                 w++;
+//             }
+//         }
+//     cout<<w;
+// }

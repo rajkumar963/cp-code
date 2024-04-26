@@ -409,38 +409,31 @@
 // }
 
 
-#include <bits/stdc++.h>
-#include<vector>
-#include<algorithm>
-
-using namespace std;
-
-
-int main() {
+// #include <bits/stdc++.h>
+// #include<vector>
+// #include<algorithm>
+// using namespace std;
+// int main() {
 	// your code goes here
-	int t;
-	cin>>t;
-	int n,x,y;
-	while(t--){
-	   cin>>n>>x>>y;
-         vector<int> arr(n);
-	    for(int i=0;i<n;i++){
-	        cin>>arr[i];
-	    }
-	    sort(arr.begin(), arr.end(), greater<int>());
+// 	int t;
+// 	cin>>t;
+// 	int n,x,y;
+// 	while(t--){
+// 	   cin>>n>>x>>y;
+//          vector<int> arr(n);
+// 	    for(int i=0;i<n;i++){
+// 	        cin>>arr[i];
+// 	    }
+// 	    sort(arr.begin(), arr.end(), greater<int>());
+//         int cost = 0;
+//         for (int diff : arr) {
+//             if (y < x * diff) {
+//                 cost += y;
+//             } else {
+//                 cost += x * diff;
+//             }
+//         }
+//         cout << cost << endl;
+// 	}
+// }
 
-        int cost = 0;
-        for (int diff : arr) {
-
-            if (y < x * diff) {
-                cost += y;
-            } else {
-                cost += x * diff;
-            }
-        }
-
-        cout << cost << endl;
-	    
-	}
-
-}
