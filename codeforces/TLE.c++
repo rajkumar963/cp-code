@@ -374,3 +374,96 @@
 //         }
 //     cout<<w;
 // }
+
+
+//Magnets
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//      string grp,arr;
+//     int count=1;
+   
+//     for(int i=1;i<n;i++){
+//         cin>>arr;
+//         if(grp !=arr){
+//             count++;
+//             grp=arr;
+//         }
+//     }
+//     cout<<count;
+// }
+
+//Chat Room
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     string s;
+//     cin>>s;
+//     string hello="hello";
+//     int j=0;
+//     for(int i=0;i<s.length();i++){
+//         if(s[i]==hello[j])
+//         j++;
+        
+//     }
+//     if(j==5){
+//             cout<<"YES";
+//         }else{
+//             cout<<"NO";
+//         }
+// }
+
+//Two Friends
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int t;
+//     cin >> t;
+//     while (t--) {
+//         int n;
+//         cin >> n;
+//         vector<int> p(n);
+//         for (int i = 0; i < n; i++) {
+//             cin >> p[i];
+//             p[i]--;  
+//         }
+//         vector<bool> invited(n, false);
+//         int invitations = 0;
+//         for (int i = 0; i < n; i++) {
+//             if (!invited[i] && !invited[p[i]]) {
+//                 invited[i] = true;
+//                 invited[p[i]] = true;
+//                 invitations++;
+//             }
+//         }
+//         if (invitations < 2) {
+//             invitations = 2;  
+//         }
+//         cout << invitations << endl;
+//     }
+//     return 0;
+// }
+
+//maximize
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    int x;
+    while(t--){
+        cin>>x;
+        
+        }
+    }
+
+//Beautiful Years
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int y;
+    cin>>y;
+    
+}
