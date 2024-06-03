@@ -144,3 +144,59 @@
 //     cout << result << endl;
 //   return 0;
 // }
+
+
+//theatre Square
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n,m,a;
+//     cin>>n>>m>>a;
+//      long long tiles = ceil((double)n/a) * ceil((double)m/a);
+//     cout << tiles << endl;
+//     return 0;
+// }
+
+//Spreadsheets
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         string s;
+//         cin>>s;
+//         for(int i=0;i<n;i++){
+//             cin>>s[i];
+//         }
+//         if(s=="1" || s=="4" || s=="78"){
+//             cout<<"+"<<endl;
+//         }}
+//     return 0;    
+// }
+
+
+// Phone Desktop
+//  #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+
+//     while (t--){
+//         int x,y;
+//         cin>>x>>y;
+//         int s2= (y+1)/2; 
+//         int r = 15*s2- 4*y;
+//         int r1 = x-r;
+        
+//         int s1 = 0;
+//         if (r1>0) {
+//             s1 = (r1 + 14)/15; 
+//         }
+//         int s = s2 + s1;
+//         cout<<s<<endl;
+//     }
+//     return 0;
+// }
+
