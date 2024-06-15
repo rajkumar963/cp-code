@@ -182,15 +182,13 @@
 // int main(){
 //     int t;
 //     cin>>t;
-
 //     while (t--){
 //         int x,y;
 //         cin>>x>>y;
 //         int s2= (y+1)/2; 
 //         int r = 15*s2- 4*y;
 //         int r1 = x-r;
-        
-//         int s1 = 0;
+        //         int s1 = 0;
 //         if (r1>0) {
 //             s1 = (r1 + 14)/15; 
 //         }
@@ -200,3 +198,44 @@
 //     return 0;
 // }
 
+// Creating Words
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         string a,b;
+//         cin>>a>>b;
+//         for(int i=0;i<a.length();i++){
+//           swap(a[i],b[i]);
+//           break;
+//         }
+//         cout<<a<<" "<<b<<endl;
+//     }
+// }
+
+
+//Maximum Multiple Sum
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    int sum=0,max=0;
+    while(t--){
+        int n;
+        cin>>n;
+        for(int i=2;i<=n;i++){
+             int k=n/i;
+            int sum1 = i* (k*(k+1)/2);
+
+            if(sum1>sum){
+                sum=sum1;
+                max=i;
+
+            }
+             }
+        cout<<max<<endl;
+    }
+}
