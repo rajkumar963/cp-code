@@ -44,25 +44,23 @@
 // }
 
 // Chat order
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int n;
-    cin>>n;
-    list<string> chat;
-     unordered_set<string> st;
-    for(int i=0;i<n;i++){
-        string s;
-        cin>>s;
-    if (st.find(s) != st.end()) {
-        chat.remove(s);
-        }
-        chat.push_front(s);
-        st.insert(s); 
-    }
-     
-    for(const auto &s:chat){
-        cout<<s<<endl;
-    }
-
-}
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     list<string> chat;
+//      unordered_set<string> st;
+//     for(int i=0;i<n;i++){
+//         string s;
+//         cin>>s;
+//     if (st.find(s) != st.end()) {
+//         chat.remove(s);
+//         }
+//         chat.push_front(s);
+//         st.insert(s); 
+//     }
+     //for(const auto &s:chat){
+//         cout<<s<<endl;
+//     }
+// }
