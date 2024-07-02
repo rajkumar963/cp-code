@@ -143,3 +143,74 @@
 // }
 
 
+//Odd Divisor
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//   int n,x;
+//   int i;
+//   cin>>n;
+//   for(int i=1;i<=n;i++){
+//     long long a;
+//   cin>>a;
+//   if(a & (a-1)){
+//     cout<<"YES"<<endl;
+//   }else{
+//     cout<<"NO"<<endl;
+//   }
+//   }
+//    return 0;
+// }
+
+//Vlad and a Sum of Sum of Digits
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     long long n;
+//     while(t--){
+//         cin>>n;
+//         long long sum=0;
+//         for(int i=1;i<=n+1;i++){
+//             if(i==0){
+//              sum=0;
+//             }
+//              else{             
+//              sum+= i%9==0?9:i%9;
+//              }
+//         }
+//         cout<<sum<<endl;
+//     }
+// }
+
+//coin 
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     int x,y;
+//     while(t--){
+//         cin>>x>>y;
+//         if(y>=-1)
+//         cout<<"YES"<<endl;
+//         else
+//         cout<<"NO"<<endl;
+//     }
+// }
+
+//Substring and Subsequence
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    int n;
+    while(t--){
+        cin>>n;
+        
+
+    }
+}
