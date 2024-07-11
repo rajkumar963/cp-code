@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class Twosums {
     public static void main(String[]arg) {
       
