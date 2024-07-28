@@ -56,8 +56,14 @@
 //     int t;
 //     cin>>t;
 //     int p,q;
+//     int avl=0;
 //     while(t--){
+//         cin>>p>>q;
+//          if(q-p>=2){
+//            avl++;
+//         }
 //     }
+//     cout<<avl<<endl;
 // }
 
 //A. Calculating Function
@@ -115,20 +121,17 @@
 // }
 
 // Prime Triplets
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int n;
-     n-=4;
-    cin>>n;
-    for(int i=3;i<=10^6;i++){
-        if(prime(i)){
-          
-        }
-    }
-
-}
-
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//      n-=4;
+//     cin>>n;
+//     for(int i=3;i<=10^6;i++){
+//         if(prime(i)){      
+//         }
+//     }
+// }
 
 //D. Another Missile Problem
 // #include <bits/stdc++.h>
