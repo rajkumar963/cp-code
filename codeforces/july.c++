@@ -164,4 +164,36 @@
 //     return 0;
 // }
 
+//A. Even Odds
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//    long long n,k;
+//     cin>>n>>k;
+//     if(k<=(n+1)/2){
+//         cout<<2*k-1<<endl;
+//     }else{
+//         cout<<2*(k-(n+1)/2)<<endl;
+//     }
+// }
+
+//     long long n,k;
+//      cin>>n>>k;
+//     vector<long long>v,r;
+//     for(int i=1;i<=n;i++){
+//          if(i%2==1){
+//             v.push_back(i);
+//         }else{
+//             r.push_back(i);
+//         }
+//     }
+//     v.insert(v.end(),r.begin(),r.end());
+//     cout<<v[k-1]<<endl;
+// }
+
+
+
+
+
+
 
