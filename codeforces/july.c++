@@ -191,6 +191,130 @@
 //     cout<<v[k-1]<<endl;
 // }
 
+//A. Ultra-Fast Mathematician
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     string num1,num2;
+//     cin>>num1>>num2;
+//     string res="";
+//     for(int i=0;i<num1.size();i++){
+//         if(num1[i]=='1' && num2[i]=='1' || num1[i]=='0' && num2[i]=='0'){
+//             res.push_back('0');
+//         }else{
+//             res.push_back('1');
+//         }
+//     }
+//     cout<<res<<endl;
+// }
+
+
+//A. Presents
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+// int main() {
+//     int n;
+//     cin >> n;
+//     vector<int> gifts(n + 1);
+//     vector<int> result(n + 1);
+//     for (int i = 1; i <= n; i++) {
+//         cin >> gifts[i];
+//         result[gifts[i]] = i;
+//     }
+//     for (int i = 1; i <= n; i++) {
+//         cout << result[i] << " ";
+//     }
+//     cout << endl;
+//     return 0;
+// }
+
+//A. HQ9+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     string s;
+//     cin>>s;
+//     int count=0;
+//     for(int i=0;i<s.size();i++){
+//         if(s[i]=='H' || s[i]=='Q' || s[i]=='9'){
+//             count++;
+//         }
+//     }
+//         if(count>0){
+//             cout<<"YES"<<endl;
+//         }else{
+//             cout<<"NO"<<endl;
+//         }    
+// }
+
+//B. Unary
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     string s;
+//     cin >> s;
+//     vector<int> v;
+//     for (int i = 0; i < s.size(); i++) {
+//         if (s[i] == '>') {
+//             v.push_back(1000);
+//         } else if (s[i] == '<') {
+//             v.push_back(1001);
+//         } else if (s[i] == '+') {
+//             v.push_back(1010);
+//         } else if (s[i] == '-') {
+//             v.push_back(1011);
+//         } else if (s[i] == '.') {
+//             v.push_back(1100);
+//         } else if (s[i] == ',') {
+//             v.push_back(1101);
+//         } else if (s[i] == '[') {
+//             v.push_back(1110);
+//         } else if (s[i] == ']') {
+//             v.push_back(1111);
+//         }
+//     }
+//     long long decimal = 0;
+//     long long power = 1;
+//     for (int i = v.size() - 1; i >= 0; i--) {
+//         int binary = v[i];
+//         int temp = 0;
+//         int binary_power = 1;
+//         while (binary > 0) {
+//             temp += (binary % 10) * binary_power;
+//             binary /= 10;
+//             binary_power *= 2;
+//         }
+//         decimal += temp * power;
+//         power *= 16;  
+//     }
+//     cout << decimal << endl;
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// const int MOD = 1000003;
+// int main() {
+//     string s;
+//     cin >> s;
+
+//     unordered_map<char, string> binary= {
+//         {'>', "1000"}, {'<', "1001"}, {'+', "1010"}, {'-', "1011"},
+//         {'.', "1100"}, {',', "1101"}, {'[', "1110"}, {']', "1111"}
+//     };
+
+//     long long result = 0;
+//     for (char c : s) {
+//         for (char bit : binary[c]) {
+//             result = (result * 2 + (bit - '0')) % MOD;
+//         }
+//     }
+//     cout << result << endl;
+//     return 0;
+// }
+
+
 
 
 
