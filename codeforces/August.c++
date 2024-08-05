@@ -108,4 +108,31 @@
 // }
 
 
-//
+//C. Simple Calculator
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     long long x,y;
+//     cin>>x>>y;
+//     cout<<x <<" + " <<y <<" = " <<x+y<<endl;
+//     cout<<x <<" * " <<y <<" = " <<x*y<<endl;
+//     cout<<x <<" - " <<y <<" = " <<x-y<<endl;
+// }
+
+//I. Lucky Numbers
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int count=0;
+    for(int i=2;i<n;i++){
+        if(n%i==0)
+            count++;
+    }
+    if(count==2)
+        cout<<"YES"<<endl;
+    else
+        cout<<"NO"<<endl;
+
+}
