@@ -120,19 +120,96 @@
 // }
 
 //I. Lucky Numbers
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int n;
-    cin>>n;
-    int count=0;
-    for(int i=2;i<n;i++){
-        if(n%i==0)
-            count++;
-    }
-    if(count==2)
-        cout<<"YES"<<endl;
-    else
-        cout<<"NO"<<endl;
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     int count=0;
+//     for(int i=2;i<n;i++){
+//         if(n%i==0)
+//             count++;
+//     }
+//     if(count==2)
+//         cout<<"YES"<<endl;
+//     else
+//         cout<<"NO"<<endl;
+// }
 
-}
+//D. Ali Baba and Puzzles
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     long long a,b,c,d;
+//     cin>>a>>b>>c>>d;
+//     if((a+b*c==d)||(a*b+c==d)||(a+b-c==d)||(a-b+c==d)||(a*b-c==d)||(a-b*c==d)){   
+//         cout<<"YES"<<endl;
+//     }else{
+//         cout<<"NO"<<endl;
+//     }
+// }
+
+// #include <iostream>
+// using namespace std;
+// bool canSolve(long long a, long long b, long long c, long long d) {
+//     return (a + b - c == d) || (a + b * c == d) || (a - b + c == d) ||
+//            (a - b * c == d) || (a * b + c == d) || (a * b - c == d);
+// }
+// int main() {
+//     long long a, b, c, d;
+//     cin >> a >> b >> c >> d; 
+//     if (canSolve(a, b, c, d)) {
+//         cout << "YES" << endl;
+//     } else {
+//         cout << "NO" << endl;
+//     }  
+//     return 0;
+//}
+
+
+//A. A+B Again?
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int n,sum=0;
+//         cin>>n;;
+//         sum=n/10+n%10;
+//         cout<<sum<<endl;
+//     }
+// }
+
+
+// Next Alphabet
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     char c;
+//     cin>>c;
+//     if(c=='z')
+//     cout<<"a";
+//     else
+//     cout<<char(c+1);
+// }
+
+//E. Interval Sweep
+// #include <bits/stdc++.h>
+// using namespace std;
+// string can_form_interval(int a, int b) {
+//     if (a + b == 0) {
+//         return "NO";
+//     }
+//     if (abs(a - b) <= 1) {
+//         return "YES";
+//     }
+//     return "NO";
+// }
+// int main() {
+//     int a, b;
+//     cin >> a >> b;
+//     cout << can_form_interval(a, b) << endl;
+//     return 0;
+// }
+
