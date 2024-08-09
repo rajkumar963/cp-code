@@ -228,3 +228,40 @@
 //     }
 // }
 
+//H. Data Type Guessing
+// #include<bits/stdc++.h>
+// #include <typeinfo>
+// using namespace std;
+// int main(){
+//     int n,k,a;
+//     cin>>n>>k>>a;
+//     long long res = (n) * k / a;
+//    if(){
+//     if(res>= -2147483648 && res <= 2147483647){
+//         cout<<"int"<<endl;
+//     }else{
+//         cout<<"long long"<<endl;
+//     }
+//    }else{
+//     cout<<"double"<<endl;
+//    }
+// }
+
+//G. Katryoshka
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     long long n,m,k;
+//     cin>>n>>m>>k;
+    
+//     long long res = 0;
+//     long long total=min({n,m,k});
+//     n-=total;
+//     m-=total;
+//     k-=total;
+//     long long total2=min({n/2,m,k});
+//      res+=total;
+//     n-=total2*2;
+//     res+=min({n/2,k});
+//     cout<<res<<endl;
+// }
