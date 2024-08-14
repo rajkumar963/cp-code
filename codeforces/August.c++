@@ -417,54 +417,78 @@
 
 
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+// using namespace std;
+// bool isValidSeating(const vector<int>& seats) {
+//     int n = seats.size();
+//     vector<bool> occupied(n + 1, false);
+//     for (int i = 0; i < n; ++i) {
+//         int seat = seats[i];
+//         if (i == 0) {
+//             occupied[seat] = true;
+//             continue;
+//         }
+//         if (!occupied[seat]) {
+//             bool hasOccupiedNeighbor = false;
+//             if (seat > 1 && occupied[seat - 1]) hasOccupiedNeighbor = true;
+//             if (seat < n && occupied[seat + 1]) hasOccupiedNeighbor = true;       
+//             if (!hasOccupiedNeighbor) {
+//                 for (int j = 1; j <= n; ++j) {
+//                     if (!occupied[j]) return false;
+//                 }
+//             }
+//         }     
+//         occupied[seat] = true;
+//     }  
+//     return true;
+// }
+// int main() {
+//     int t;
+//     cin >> t;  
+//     while (t--) {
+//         int n;
+//         cin >> n;       
+//         vector<int> seats(n);
+//         for (int i = 0; i < n; ++i) {
+//             cin >> seats[i];
+//         }     
+//         cout << (isValidSeating(seats) ? "YES" : "NO") << endl;
+//     }  
+//     return 0;
+// }
 
+
+//Even, Odd, Positive and Negative
+#include <iostream>
 using namespace std;
 
-bool isValidSeating(const vector<int>& seats) {
-    int n = seats.size();
-    vector<bool> occupied(n + 1, false);
-    
-    for (int i = 0; i < n; ++i) {
-        int seat = seats[i];
-        if (i == 0) {
-            occupied[seat] = true;
-            continue;
-        }
-        
-        if (!occupied[seat]) {
-            bool hasOccupiedNeighbor = false;
-            if (seat > 1 && occupied[seat - 1]) hasOccupiedNeighbor = true;
-            if (seat < n && occupied[seat + 1]) hasOccupiedNeighbor = true;
-            
-            if (!hasOccupiedNeighbor) {
-                for (int j = 1; j <= n; ++j) {
-                    if (!occupied[j]) return false;
-                }
-            }
-        }
-        
-        occupied[seat] = true;
-    }
-    
-    return true;
-}
-
 int main() {
-    int t;
-    cin >> t;
+    int N;
+    cin >> N;
+
+    int even = 0, odd = 0, positive = 0, negative = 0;
     
-    while (t--) {
-        int n;
-        cin >> n;
+    for (int i = 0; i < N; i++) {
+        int num;
+        cin >> num;
         
-        vector<int> seats(n);
-        for (int i = 0; i < n; ++i) {
-            cin >> seats[i];
+        if (num % 2 == 0) {
+            even++;
+        } else {
+            odd++;
         }
         
-        cout << (isValidSeating(seats) ? "YES" : "NO") << endl;
+        if (num > 0) {
+            positive++;
+        } else if (num < 0) {
+            negative++;
+        }
     }
+    
+    cout << "Even: " << even << endl;
+    cout << "Odd: " << odd << endl;
+    cout << "Positive: " << positive << endl;
+    cout << "Negative: " << negative << endl;
     
     return 0;
 }
