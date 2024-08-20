@@ -459,36 +459,158 @@
 
 
 //Even, Odd, Positive and Negative
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int N;
+//     cin >> N;
+//     int even = 0, odd = 0, positive = 0, negative = 0;   
+//     for (int i = 0; i < N; i++) {
+//         int num;
+//         cin >> num;       
+//         if (num % 2 == 0) {
+//             even++;
+//         } else {
+//             odd++;
+//         }      
+//         if (num > 0) {
+//             positive++;
+//         } else if (num < 0) {
+//             negative++;
+//         }
+//     }
+//     cout << "Even: " << even << endl;
+//     cout << "Odd: " << odd << endl;
+//     cout << "Positive: " << positive << endl;
+//     cout << "Negative: " << negative << endl;
+//     return 0;
+// }
 
-int main() {
-    int N;
-    cin >> N;
 
-    int even = 0, odd = 0, positive = 0, negative = 0;
+
+// Anton and Letters
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//   string s;
+//   getline(cin, s);
+//     set<char> s1;
+//     for(char c: s){
+//         if(isalpha(c)){
+//             s1.insert(c);
+//         }
+//     }
+//     cout<<s1.size()<<endl;
+//     return 0;
+// }
+
+//. Two numbers
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int a,b;
+//     cin>>a>>b;
+//      double res = static_cast<double>(a) / b;
+//     cout<<"floor " <<a<<" / "<< b <<" = "<<floor(res)<<endl;
+//     cout<<"ceil " <<a<<" / "<< b <<" = "<<ceil(res)<<endl;
+//     cout<<"round " <<a<<" / "<< b <<" = "<<round(res)<<endl;
+//     return 0;
+// }
+
+
+//A.Kefa and First Steps
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int n;
+//     cin >> n;
+//     long long arr[n];
+//     for (int i = 0; i < n; i++) {
+//         cin >> arr[i];
+//     }   
+//     int count = 1, maxCount = 1; 
+//     for (int i = 1; i < n; i++) {
+//         if (arr[i] >= arr[i - 1]) {
+//             count++;
+//             maxCount = max(maxCount, count);  
+//         } else {
+//             count = 1; 
+//         }
+//     }   
+//     cout << maxCount << endl;  
+//     return 0;
+// }
+
+//Z. Three Numbers
+// #include <iostream>
+// using namespace std;
+// int countCombi(int K, int S) {
+//     int count = 0;
     
-    for (int i = 0; i < N; i++) {
-        int num;
-        cin >> num;
-        
-        if (num % 2 == 0) {
-            even++;
+//     for (int x = 0; x <= K; x++) {
+//         for (int y = 0; y <= K; y++) {
+//             int z = S - x - y;
+//             if (z >= 0 && z <= K) {
+//                 count++;
+//             }
+//         }
+//     }
+//     return count;
+// }
+// int main() {
+//     int K, S;
+//     cin >> K >> S;
+//     int result = countCombi(K, S);
+//     cout << result << endl;
+//     return 0;
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int a,b;
+//         cin>>a>>b;
+//         int sum=0;
+//        if(a>b){
+//          for(int i=b+1;i<a;i++){
+//             if(i%2==1)
+//             sum+=i;
+//         }
+//        }else{
+//         for(int i=a+1;i<b;i++){
+//             if(i%2==1)
+//             sum+=i;
+//         }
+//        }
+//         cout<<sum<<endl;
+//     }
+// }
+
+//C. Clock and Strings
+#include <bits/stdc++.h>
+using namespace std;
+bool intersects(int a, int b, int c, int d) {
+    if (a > b) swap(a, b); // Make sure a < b
+    if (c > d) swap(c, d); // Make sure c < d
+    return (a < c && c < b && (d > b || d < a)) || (c < a && a < d && (b > d || b < c));
+}
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int a, b, c, d;
+        cin >> a >> b >> c >> d;
+
+        if (intersects(a, b, c, d) || intersects(c, d, a, b)) {
+            cout << "YES" << endl;
         } else {
-            odd++;
-        }
-        
-        if (num > 0) {
-            positive++;
-        } else if (num < 0) {
-            negative++;
+            cout << "NO" << endl;
         }
     }
-    
-    cout << "Even: " << even << endl;
-    cout << "Odd: " << odd << endl;
-    cout << "Positive: " << positive << endl;
-    cout << "Negative: " << negative << endl;
-    
     return 0;
 }
