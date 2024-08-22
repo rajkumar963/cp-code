@@ -234,8 +234,7 @@
 // int main(){
 //     long long n,m,k;
 //     cin>>n>>m>>k;
-    
-//     long long res = 0;
+    //     long long res = 0;
 //     long long total=min({n,m,k});
 //     n-=total;
 //     m-=total;
@@ -384,7 +383,6 @@
 //A. Primary Task
 // #include <bits/stdc++.h>
 // using namespace std;
-
 // bool isImportant(int num) {
 //     string numStr = to_string(num);
 //     if (numStr.substr(0, 2) == "10" && numStr.length() > 2) {
@@ -405,13 +403,11 @@
 // int main() {
 //     int t;
 //     cin >> t;
-    
 //     for (int i = 0; i < t; i++) {
 //         int a;
 //         cin >> a;
 //         cout << (isImportant(a) ? "YES" : "NO") << endl;
-//     }
-    
+//     }  
 //     return 0;
 // }
 
@@ -545,8 +541,7 @@
 // #include <iostream>
 // using namespace std;
 // int countCombi(int K, int S) {
-//     int count = 0;
-    
+//     int count = 0;  
 //     for (int x = 0; x <= K; x++) {
 //         for (int y = 0; y <= K; y++) {
 //             int z = S - x - y;
@@ -591,25 +586,71 @@
 // }
 
 //C. Clock and Strings
+// #include <bits/stdc++.h>
+// using namespace std;
+// bool intersects(int a, int b, int c, int d) {
+//     if (a > b) swap(a, b); // Make sure a < b
+//     if (c > d) swap(c, d); // Make sure c < d
+//     return (a < c && c < b && (d > b || d < a)) || (c < a && a < d && (b > d || b < c));
+// }
+// int main() {
+//     int t;
+//     cin >> t;
+//     while (t--) {
+//         int a, b, c, d;
+//         cin >> a >> b >> c >> d;
+//         if (intersects(a, b, c, d) || intersects(c, d, a, b)) {
+//             cout << "YES" << endl;
+//         } else {
+//             cout << "NO" << endl;
+//         }
+//     }
+//     return 0;
+// }
+
+//A. Dubstep
+// #include<bits/stdc++.h>
+// using namespace std;
+// string remove(const string& s){
+//     string res="";
+//     int i=0;while(i<s.size()){
+//         if(s.substr(i,3)=="WUB"){
+//             if (!res.empty()) {
+//                 res += " ";
+//             }
+//             i += 3;
+//         }else{
+//             res+=s[i];
+//             i++;
+//         }
+//     }
+//     return res;
+// }
+// int main(){
+//     string s;
+//     cin>>s;
+//     string ans=remove(s);
+//     cout<<ans<<endl;
+// }
+
+//closest point
 #include <bits/stdc++.h>
-using namespace std;
-bool intersects(int a, int b, int c, int d) {
-    if (a > b) swap(a, b); // Make sure a < b
-    if (c > d) swap(c, d); // Make sure c < d
-    return (a < c && c < b && (d > b || d < a)) || (c < a && a < d && (b > d || b < c));
-}
+using namespace std; 
 int main() {
     int t;
     cin >> t;
 
     while (t--) {
-        int a, b, c, d;
-        cin >> a >> b >> c >> d;
-
-        if (intersects(a, b, c, d) || intersects(c, d, a, b)) {
-            cout << "YES" << endl;
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        for (int i = 0; i < n; ++i) {
+            cin >> a[i];
+        }
+        if (n == 2 && abs(a[1] - a[0]) > 1) {
+            cout << "Yes" << endl;
         } else {
-            cout << "NO" << endl;
+            cout << "No" << endl;
         }
     }
     return 0;
