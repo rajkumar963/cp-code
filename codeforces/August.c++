@@ -656,13 +656,40 @@
 // }
 
 //table
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     for(int i=1;i<=12;i++){
+//         cout<<t<<" * "<<i<<" = "<<i*t<<endl;
+//     }
+// }
+
+
+//only pluses
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
     int t;
     cin>>t;
-    for(int i=1;i<=12;i++){
-        cout<<t<<" * "<<i<<" = "<<i*t<<endl;
+    while(t--){
+        int a,b,c;
+        cin>>a>>b>>c;
+    int prod = a * b * c;
+        for (int i = 0; i <= 5; i++) {
+            for (int j = 0; j <= 5 - i; ++j) {
+                int k = 5 - i - j;
+                int a1 = a + i;
+                int a2 = b + j;
+                int a3 = c + k;
+                int newp = a1 * a3 * a2;
+                prod = max(prod, newp);
+            }
+        }
+ 
+        cout << prod << endl;
+ 
     }
-}
+}      
 
