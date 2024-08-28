@@ -668,28 +668,111 @@
 
 
 //only pluses
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        int a,b,c;
-        cin>>a>>b>>c;
-    int prod = a * b * c;
-        for (int i = 0; i <= 5; i++) {
-            for (int j = 0; j <= 5 - i; ++j) {
-                int k = 5 - i - j;
-                int a1 = a + i;
-                int a2 = b + j;
-                int a3 = c + k;
-                int newp = a1 * a3 * a2;
-                prod = max(prod, newp);
-            }
-        }
- 
-        cout << prod << endl;
- 
-    }
-}      
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int a,b,c;
+//         cin>>a>>b>>c;
+//     int prod = a * b * c;
+//         for (int i = 0; i <= 5; i++) {
+//             for (int j = 0; j <= 5 - i; ++j) {
+//                 int k = 5 - i - j;
+//                 int a1 = a + i;
+//                 int a2 = b + j;
+//                 int a3 = c + k;
+//                 int newp = a1 * a3 * a2;
+//                 prod = max(prod, newp);
+//             }
+//         } 
+//         cout << prod << endl;
+//     }
+// }      
 
+//. Anton and Polyhedrons
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//         string s[t];
+//         long long sum=0;
+//         for(int i=0;i<t;i++){
+//             cin>>s[i];
+//             if(s[i]=="Tetrahedron"){
+//                 sum+=4;
+//             }else if(s[i]=="Cube"){
+//                 sum+=6;
+//             }else if(s[i]=="Octahedron"){
+//                 sum+=8;
+//             }else if(s[i]=="Dodecahedron"){
+//                 sum+=12;
+//             }else if(s[i]=="Icosahedron"){
+//                 sum+=20;
+//             }
+//         }
+//         cout<<sum<<endl;
+// }
+
+//B. Taxi
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     vector<int> group(5,0);
+//     int g_size;
+//     for(int i=0;i<t;i++){
+//         cin>>g_size;
+//         group[g_size]++;
+//     }
+//     int taxi=0;
+//     taxi+=group[4];
+//     taxi+=group[3];
+//     group[1]=max(0,group[1]-group[3]);
+//     taxi=taxi+group[2]/2;
+//     if(group[2]%2==1){
+//         taxi++;
+//         group[1]=max(0,group[1]-2);
+//     }
+//    taxi+=(group[1]+3)/4;
+//     cout<<taxi<<endl; 
+// }
+
+//Easy Fibonacci
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     if (n == 0) return 0;
+//     if (n == 1) {
+//         cout << "0";
+//         return 0;
+//     } 
+//     long long dp[n];
+//     dp[0]=0;
+//     dp[1]=1;
+//     cout<<dp[0]<<" "<<dp[1]<<" ";
+//     for(int i=2;i<n;i++){
+//         dp[i]=dp[i-1]+dp[i-2];
+//         cout<<dp[i]<<" ";
+//     }
+// }
+
+
+//A. Is your horseshoe on the other hoof?
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int a,b,c,d;
+//     cin>>a>>b>>c>>d;
+//     set<int> s;
+//     s.insert(a);
+//     s.insert(b);    
+//     s.insert(c);
+//     s.insert(d);
+//     cout<<4-s.size()<<endl;
+// }
