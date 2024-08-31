@@ -776,3 +776,64 @@
 //     s.insert(d);
 //     cout<<4-s.size()<<endl;
 // }
+
+
+//A. Summation
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     long long sum=0;
+//     vector<int> v(t);
+//     for(int i=0;i<t;i++){
+//         cin>>v[i];
+//         sum+=v[i];
+//     }
+//     cout<<abs(sum)<<endl;
+// }
+
+
+//A. IQ test
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     vector<int>v(n);
+//     int odd=0,even=0;
+//     int idxodd=0,idxeven=0;
+//     for(int i=0;i<n;i++){
+//         cin>>v[i];
+//         if(v[i]%2==0){
+//             even++;
+//             idxeven=i+1;
+//         }else{
+//             odd++;
+//             idxodd=i+1;
+//         }
+//     }
+//     if(odd>even){
+//         cout<<idxeven<<endl;
+//     }else{
+//         cout<<idxodd<<endl;
+//     }
+// }
+
+// sorting
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    vector<int>a(n);
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+   sort(a.begin(),a.end());
+   for(int i=0;i<n;i++){
+       cout<<a[i]<<" ";
+   }
+    
+}
