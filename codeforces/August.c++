@@ -821,7 +821,41 @@
 // }
 
 // sorting
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     vector<int>a(n);
+//     for(int i=0;i<n;i++){
+//         cin>>a[i];
+//     }
+//    sort(a.begin(),a.end());
+//    for(int i=0;i<n;i++){
+//        cout<<a[i]<<" ";
+//    }   
+// }
 
+
+//Positions in array
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     vector<int>a(n);
+//     for(int i=0;i<n;i++){
+//         cin>>a[i];
+//     }
+//     for(int i=0;i<n;i++){
+//         if(a[i]<=10){
+//             cout<<"A"<<"["<<i<<"] "<<"= "<<a[i]<<endl;
+//         }
+//     }
+// }
+
+
+// Replacement
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
@@ -830,10 +864,14 @@ int main(){
     vector<int>a(n);
     for(int i=0;i<n;i++){
         cin>>a[i];
+        if(a[i]>0){
+            cout<<1<<" ";
+        }
+        else if(a[i]<0){
+            cout<<2<<" ";
+        }
+        else{
+            cout<<0<<" ";
+        }
     }
-   sort(a.begin(),a.end());
-   for(int i=0;i<n;i++){
-       cout<<a[i]<<" ";
-   }
-    
 }
