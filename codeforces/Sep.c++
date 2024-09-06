@@ -145,27 +145,77 @@
 
 
 //cAPS lOCK
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     string s;
+//     cin >> s;
+//     bool changeCase = true;
+//     int len = s.length();
+//     for (int i = 1; i < len; ++i) {
+//         if (!isupper(s[i])) {
+//             changeCase = false;
+//             break;
+//         }
+//     }
+//     if (changeCase) {
+//         for (int i = 0; i < len; ++i) {
+//             if (isupper(s[i]))
+//                 s[i] = tolower(s[i]);
+//             else
+//                 s[i] = toupper(s[i]);
+//         }
+//     }
+//     cout << s << endl;
+// }
+
+
+//Cut Ribbon
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n, a, b, c;
+//     cin>>n>>a>>b>>c;
+//     int count=0;
+//     while(n>0){
+//         if(n>=a){
+//             n=n-a;
+//             count++;
+//         }
+//         else if(n>=b){
+//             n=n-b;
+//             count++;
+//         }
+//         else if(n>=c){
+//             n=n-c;
+//             count++;
+//         }
+//         else{
+//             break;
+//         }
+//     }   
+//     cout<<count<<endl;
+//     return 0;
+// }
+
+
+//Calculator
 #include<bits/stdc++.h>
 using namespace std;
-int main() {
-    string s;
-    cin >> s;
-    bool changeCase = true;
-    int len = s.length();
-    for (int i = 1; i < len; ++i) {
-        if (!isupper(s[i])) {
-            changeCase = false;
-            break;
-        }
+int main(){
+    int a,b;
+    char c;
+    cin>>a>>c>>b;
+    if(c=='+'){
+        cout<<a+b<<endl;
     }
-    if (changeCase) {
-        for (int i = 0; i < len; ++i) {
-            if (isupper(s[i]))
-                s[i] = tolower(s[i]);
-            else
-                s[i] = toupper(s[i]);
-        }
+    else if(c=='-'){
+        cout<<a-b<<endl;
     }
-    cout << s << endl;
+    else if(c=='*'){
+        cout<<a*b<<endl;
+    }
+    else{
+        cout<<a/b<<endl;
+    }
 }
-
