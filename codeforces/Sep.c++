@@ -200,22 +200,58 @@
 
 
 //Calculator
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int a,b;
-    char c;
-    cin>>a>>c>>b;
-    if(c=='+'){
-        cout<<a+b<<endl;
-    }
-    else if(c=='-'){
-        cout<<a-b<<endl;
-    }
-    else if(c=='*'){
-        cout<<a*b<<endl;
-    }
-    else{
-        cout<<a/b<<endl;
-    }
-}
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int a,b;
+//     char c;
+//     cin>>a>>c>>b;
+//     if(c=='+'){
+//         cout<<a+b<<endl;
+//     }
+//     else if(c=='-'){
+//         cout<<a-b<<endl;
+//     }
+//     else if(c=='*'){
+//         cout<<a*b<<endl;
+//     }
+//     else{
+//         cout<<a/b<<endl;
+//     }
+// }
+
+
+//Puzzles
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n,m;
+//     cin>>n>>m;
+//     int diff=0;
+//     vector<int> v(m);
+//     for(int i=0;i<m;i++){
+//         cin>>v[i];
+//     }
+//     sort(v.begin(),v.end());
+//     diff=v[n-1]-v[0];
+//     for(int i=1;i<=m-n;i++){
+//          diff = min(diff, v[i + n - 1] - v[i]);
+//     }
+//     cout<<diff<<endl;
+//     return 0;  
+// }
+
+//Three Brothers
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int a,b;
+//     cin>>a>>b;
+//     if((a==3 &&b==1)||(a==1 &&b==3)){
+//         cout<<2<<endl;
+//     }else if((a==3 &&b==2)||(a==2 &&b==3)){
+//         cout<<1<<endl;
+//     }else if((a==1 &&b==2)||(a==2 &&b==1)){
+//         cout<<3<<endl;
+//     }
+// }
