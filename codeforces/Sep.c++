@@ -255,3 +255,127 @@
 //         cout<<3<<endl;
 //     }
 // }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int t;
+//         cin >> t;
+//         while(t--) {
+//             int n;
+//             cin >> n;
+//             vector<int> a(n);  
+//             int res = 0;              
+//             for(int i = 0; i < n; i++) {
+//                 cin >> a[i];
+//             }            
+//             for(int i = 0; i < n; i++) {
+//                 if(i % 2 == 0) {
+//                     res += a[i];  
+//                 } else {
+//                     res -= a[i];  
+//                 }
+//             }
+//             cout << res << endl;
+//         }
+//         return 0;
+//     }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int n = 5;
+//     vector<vector<int>> matrix(n, vector<int>(n)); 
+//     for(int i = 0; i < n; i++) {  
+//         for(int j = 0; j < n; j++) {
+//             cin >> matrix[i][j];  
+//         }
+//     }
+//     int x = 0, y = 0;
+//     for(int i = 0; i < n; i++) {
+//         for(int j = 0; j < n; j++) {
+//             if(matrix[i][j] == 1) {
+//                 x = i;
+//                 y = j;
+//                 break;
+//             }
+//         }
+//     }
+//     cout << abs(x - 2) + abs(y - 2) << endl;
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main() {
+//     int n = 3;
+//     vector<vector<int>> matrix(n, vector<int>(n)); 
+//     for(int i = 0; i < n; i++) {  
+//         for(int j = 0; j < n; j++) {
+//             cin >> matrix[i][j];  
+//         }
+//     }
+//     int dir[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+//     vector<vector<int>>res(n, vector<int>(n));
+
+//     for(int i = 0; i < 3; i++) {
+//         for(int j = 0; j < 3; j++) {
+//             if(matrix[i][j] % 2 == 0){
+//                 res[i][j] = 1;
+//                 int opr = 0;
+//                 while(opr++){
+//                     int x = dir[opr][0];
+//                     int y = dir[opr][1];
+//                     if(x + i >= 0 && x + i < n && y + j >= 0 && y + j < n) {
+//                         res[x + i][y + j] = matrix[i][j];
+//                     }
+//                 }
+//             }
+//             else{
+//                 res[i][j] = 0;
+//                 int opr = 0;
+//                 while(opr++){
+//                     int x = dir[opr][0];
+//                     int y = dir[opr][1];
+//                     if(x + i >= 0 && x + i < n && y + j >= 0 && y + j < n) {
+//                         res[x + i][y + j] = matrix[i][j];
+//                     }
+//                 }
+//             }
+//         }
+
+//     }
+//     for(int i = 0; i < n; i++) {  
+//         for(int j = 0; j < n; j++) {
+//             cout << res[i][j];  
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+
+// Alternating Sum of Numbers
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int n;
+//         cin>>n;
+//         vector<int> a(n);
+//         int sum=0;
+//         for(int i=0;i<n;i++){
+//              cin>>a[i];
+//              if(i%2!=0){
+//               sum+=a[i];
+//              }else{
+//               sum-=a[i];
+//              }
+//         }
+//         cout<<-(sum)<<endl;
+//     }
+// }
