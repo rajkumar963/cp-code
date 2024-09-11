@@ -395,25 +395,68 @@
 // }
 
 //Prime checking
+// #include<bits/stdc++.h>
+// using namespace std;
+// bool isPrime(long long n){
+//     if(n<=1){
+//         return false;
+//     }
+//     for(long long i=2;i<=sqrt(n);i++){
+//         if(n%i==0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// int main(){
+//     long long n;
+//     cin>>n;
+//     if(isPrime(n)){
+//         cout<<"YES"<<endl;
+//     }else{
+//         cout<<"NO"<<endl;
+//     }
+// }/
+
+
+//. Koko And The Transformation
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n,m;
+//     cin>>n>>m;
+//     vector<int> a(n);
+//     vector<int> b(m);
+//     int sum1=0,sum2=0;
+//     for(int i=0;i<n;i++){
+//         cin>>a[i];
+//         sum1=sum1+a[i];
+//     }
+//     for(int i=0;i<m;i++){
+//         cin>>b[i];
+//         sum2=sum2+b[i];
+//     }
+//     if(sum1==sum2){
+//         cout<<"YES"<<endl;
+//     }else{
+//         cout<<"NO"<<endl;
+//     }
+//     return 0;
+// }
+
+
+// The New Year: Meeting Friends
 #include<bits/stdc++.h>
 using namespace std;
-bool isPrime(long long n){
-    if(n<=1){
-        return false;
-    }
-    for(long long i=2;i<=sqrt(n);i++){
-        if(n%i==0){
-            return false;
-        }
-    }
-    return true;
-}
 int main(){
-    long long n;
-    cin>>n;
-    if(isPrime(n)){
-        cout<<"YES"<<endl;
-    }else{
-        cout<<"NO"<<endl;
+    int a,b,c;
+    cin>>a>>b>>c;
+    if((a>b &&a<c) || (a<b && a>c)) {
+        cout<<(abs(a-b)+abs(a-c))<<endl;
+    }else if((b<a && b>c) || (b>a && b<c)) {
+        cout<<(abs(b-a)+abs(b-c))<<endl;
+    }else if((c>a && c<b) || (c<a && c>b)) {
+        cout<<(abs(c-a)+abs(c-b))<<endl;
     }
+    return 0;
 }
