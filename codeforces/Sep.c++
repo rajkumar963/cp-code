@@ -446,17 +446,158 @@
 
 
 // The New Year: Meeting Friends
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    int a,b,c;
-    cin>>a>>b>>c;
-    if((a>b &&a<c) || (a<b && a>c)) {
-        cout<<(abs(a-b)+abs(a-c))<<endl;
-    }else if((b<a && b>c) || (b>a && b<c)) {
-        cout<<(abs(b-a)+abs(b-c))<<endl;
-    }else if((c>a && c<b) || (c<a && c>b)) {
-        cout<<(abs(c-a)+abs(c-b))<<endl;
-    }
-    return 0;
-}
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int a,b,c;
+//     cin>>a>>b>>c;
+//     if((a>b &&a<c) || (a<b && a>c)) {
+//         cout<<(abs(a-b)+abs(a-c))<<endl;
+//     }else if((b<a && b>c) || (b>a && b<c)) {
+//         cout<<(abs(b-a)+abs(b-c))<<endl;
+//     }else if((c>a && c<b) || (c<a && c>b)) {
+//         cout<<(abs(c-a)+abs(c-b))<<endl;
+//     }
+//     return 0;
+// }
+
+
+//fixed password
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int x;
+//    while(true){
+//     cin>>x;
+//       if(x==1999)
+//    { 
+//     cout<<"Correct"<<endl;
+//       break;
+//    }
+//     else
+//     {cout<<"Wrong"<<endl;}
+   
+//    }
+// }
+
+//Showering
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int n,s,m;
+//         cin>>n>>s>>m;
+//         vector<pair<int,int>>intvl(n);
+//         for(int i=0;i<n;i++){
+//             cin>>intvl[i].first>>intvl[i].second;
+//         }
+//         bool shower=false;
+//         if(intvl[0].first>=s){
+//             shower=true;
+//         }
+//         for(int i=1;i<n;i++){
+//             int time=intvl[i].first-intvl[i-1].second;
+//             if(time>=s){
+//                 shower=true;
+//                 break;
+//             }
+//         }
+//         if(m-intvl[n-1].second>=s){
+//             shower=true;
+//         }
+//         if(shower){
+//             cout<<"YES"<<endl;
+//         }else{
+//             cout<<"NO"<<endl;
+//         }
+//     }
+// }
+
+
+
+
+//Simple Palindrome
+// #include<bits/stdc++.h>
+// using namespace std;
+// string palindrome(int n){
+//      string vowels = "aeiou";
+//     string res = "";
+//     for(int i=0;i<n;i++){
+//         res+=vowels[i% 5];
+
+//         sort(res.begin(),res.end());
+//     }
+//     return res;
+// }
+// int main(){
+//     int t;
+//     cin>>t;
+//     int n;
+//     while(t--){
+//         cin>>n;
+//         cout<<palindrome(n)<<endl;
+//     }
+// }
+
+
+//Submission Bait
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int n;
+//         cin>>n;
+//         vector<int> v(n);
+//         for(int i=0;i<n;i++){
+//             cin>>v[i];
+//         }
+//         sort(v.rbegin(),v.rend());
+//         int Asum=0,Bsum=0;
+//         for(int i=0;i<n;i++){
+//             if(i%2==0){
+//                 Asum+=v[i];
+//             }else{
+//                 Bsum+=v[i];
+//             }
+//         }
+//         if(Asum>Bsum){
+//             cout<<"YES"<<endl;
+//         }else{
+//             cout<<"NO"<<endl;
+//         }
+//     }
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Hard compare
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     long long a,b,c,d;
+//     cin>>a>>b>>c>>d;
+//     if(pow(a,b)>pow(c,d)){
+//         cout<<"YES";
+//     }else{
+//         cout<<"NO";
+//     }
+// }
