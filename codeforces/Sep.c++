@@ -574,21 +574,6 @@
 // }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Hard compare
 // #include<bits/stdc++.h>
 // using namespace std;
@@ -601,3 +586,35 @@
 //         cout<<"NO";
 //     }
 // }
+
+
+//Card Game
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int a1,a2,b1,b2;
+//         cin>>a1>>a2>>b1>>b2;
+//         if((a1<=b1 && a2<=b2) &&(a1<=b2 && a2<=b1)){
+//             cout<<0<<endl;
+//         }else if(a1>b1 && a2>b2 && a1>b2 && a2>b1){
+//                cout<<4<<endl;
+//         }else{
+//             cout<<2<<endl;
+//         }
+//     }
+// }
+
+
+//Max and min
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     long long a,b,c;
+//     cin>>a>>b>>c;
+//     cout<<min(a,min(b,c))<<" "<<max(a,max(b,c));
+// }
+
+
