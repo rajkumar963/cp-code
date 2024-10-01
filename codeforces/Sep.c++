@@ -591,21 +591,28 @@
 //Card Game
 // #include<bits/stdc++.h>
 // using namespace std;
+// int check(int a, int b){
+//     if(a>b) return 1;
+//     else if(a<b) return -1;
+//     else return 0;
+// }
 // int main(){
 //     int t;
 //     cin>>t;
 //     while(t--){
 //         int a1,a2,b1,b2;
 //         cin>>a1>>a2>>b1>>b2;
-//         if((a1<=b1 && a2<=b2) &&(a1<=b2 && a2<=b1)){
-//             cout<<0<<endl;
-//         }else if(a1>b1 && a2>b2 && a1>b2 && a2>b1){
-//                cout<<4<<endl;
-//         }else{
-//             cout<<2<<endl;
-//         }
+//         int res = 0;
+//         if(check(a1,b1) + check(a2,b2) > 0) res++;
+//         if(check(a1,b2) + check(a2,b1) > 0) res++;
+//         if(check(a2,b1) + check(a1,b2) > 0) res++;
+//         if(check(a2,b2) + check(a1,b1) > 0) res++;
+//         cout<<res<<endl;        
 //     }
 // }
+
+
+
 
 
 //Max and min
@@ -618,3 +625,146 @@
 // }
 
 
+//A. Robin Helps
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int n,k,count=0,gold=0;
+//         cin>>n>>k;
+//         int a[n];
+//         for(int i=0;i<n;i++){
+//             cin>>a[i];
+//              if(a[i]==0 && gold>0){
+//                 count++;
+//                 gold--;
+//             }else if(a[i]>=k){
+//                 gold+=a[i];
+//             }
+//         }
+//         cout<<count<<endl;
+//     }
+// }
+
+
+//. Robin Hood and the Major Oak
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll; 
+
+// ll sum_of_squares(ll x) {
+//     return (x * (x + 1) * (2 * x + 1) / 6);
+// }
+   
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int n,k;
+//         cin>>n>>k;
+//         ll start_year = max(1 , n - k + 1);
+//          ll total_leaves = sum_of_squares(n) - sum_of_squares(start_year - 1);
+//         if(total_leaves % 2 == 0)
+//        { cout<<"YES"<<endl;}
+//         else
+//        { cout<<"NO"<<endl;}
+//     }
+// }
+
+
+
+
+//Xenia and Ringroad
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n,m;
+//     cin>>n>>m;
+//     int arr[m],curr=1;
+//     long long count=0;
+//     for(int i=0;i<m;i++){
+//         cin>>arr[i];
+//         if(arr[i]>=curr){
+//             count+=arr[i]-curr;
+//             curr=arr[i];
+//         }else{
+//             count+=n-curr+arr[i];
+//             curr=arr[i];
+//         }
+//     }
+//     cout<<count<<endl;
+// }
+
+
+//I Wanna Be the Guy
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n,p,q;
+//     cin>>n;
+//     vector<bool>level(n+1,false);
+//     cin>>p;
+//     for(int i=0;i<p;i++){
+//         int x;
+//         cin>>x;
+//         level[x]=true;
+//     }
+//     cin>>q;
+//     for(int i=0;i<q;i++){
+//         int x;
+//         cin>>x;
+//         level[x]=true;
+//     }
+//     bool allpassed=true;
+//     for(int i=1;i<=n;i++){
+//         if(!level[i]){
+//             allpassed=false;
+//             break;
+//         }
+//     }
+//     if(allpassed){
+//         cout<<"I become the guy."<<endl;
+//     }else{
+//         cout<<"Oh, my keyboard!"<<endl;
+//     }
+// }
+
+
+//Pangram
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     string s;
+//     cin>>s;
+//    set<char>st;
+//     for(int i=0;i<n;i++){
+//         st.insert(tolower(s[i]));
+//     }
+//     if(st.size()==26){
+//         cout<<"YES"<<endl;
+//     }else{
+//         cout<<"NO"<<endl;
+//     }   
+// }
+
+
+// // Zhan's Blender
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int x,y;
+        cin>>x>>y;
+        int fruit=min(x,y);
+        int res=ceil(n*1.0/fruit);
+        cout<<res<<endl;
+    }
+}
