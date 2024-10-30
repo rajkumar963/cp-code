@@ -146,3 +146,53 @@
 //         }
 //     }
 // }
+
+
+
+// //Perpendicular Segments 
+// #include<bits/stdc++.h>
+// #define ll long long
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         ll x,y,k;
+//         cin>>x>>y>>k;
+//         ll len=min(x,y);
+//         cout<<"0 0 "<<len<<" "<<len<<endl;
+//         cout<<"0 "<<len<<" "<<len<<" 0"<<endl;
+//     }
+// }
+
+
+// //Sliding 
+// #include<bits/stdc++.h>
+// #define ll long long
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         ll n,m,r,c;
+//         cin>>n>>m>>r>>c;
+//         ll res=(2*m-1)*(n-r)+m-c;
+//         cout<<res<<endl;
+//     }
+//     return 0;
+// }
+
+
+
+//Everyone Loves Tres
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        
+    }
+}
