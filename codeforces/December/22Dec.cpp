@@ -1,3 +1,23 @@
+//A. Kevin and Combination Lock
+// #include<bits/stdc++.h>
+// using namespace std;
+// #define ll long long
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//       ll x;
+//       cin>>x;
+//       if(x%33==0){
+//           cout<<"YES"<<endl;
+//       }else{
+//           cout<<"NO"<<endl;
+//       }
+//     }
+// }
+
+
+//B. Kevin and Permutation
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
@@ -6,7 +26,7 @@ int main(){
     while(t--){
         int n,k;
         cin>>n>>k;
-        vector<int>ans(n);
+        vector<int>ans;
         if(k==1){
             for(int i=0;i<n;i++){
                 ans.push_back(i+1);
