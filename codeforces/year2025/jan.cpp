@@ -55,34 +55,66 @@
 // }
 
 
-//Game of Mathletes
+// //Game of Mathletes
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while(t--){
+//         int n,k;
+//         cin>>n>>k;
+//         int a[n],cnt=0;
+//         for(int i=0;i<n;i++){
+//             cin>>a[i];
+//         }
+//        sort(a,a+n);
+//         int l=0,r=n-1;
+//         while(l<r){
+//             int sum=a[l]+a[r];
+//             if(sum==k){
+//                 cnt++;
+//                 l++;
+//                 r--;
+//             }
+//             else if (sum < k) {
+//                 l++;
+//             } else {
+//                 r--; 
+//             }
+//         }
+//         cout<<cnt<<endl; 
+//     }
+// }
+
+
+//B. Journey
 #include<bits/stdc++.h>
 using namespace std;
+#define ll long long
 int main(){
     int t;
     cin>>t;
     while(t--){
-        int n,k;
-        cin>>n>>k;
-        int a[n],cnt=0;
-        for(int i=0;i<n;i++){
-            cin>>a[i];
-        }
-       sort(a,a+n);
-        int l=0,r=n-1;
-        while(l<r){
-            int sum=a[l]+a[r];
-            if(sum==k){
-                cnt++;
-                l++;
-                r--;
+        ll n,a,b,c;
+        cin>>n>>a>>b>>c;
+        ll totalstep=0;
+        ll total=a+b+c;
+        totalstep += (n / total) * 3;
+        n %= total;
+
+            if(n> 0){
+                totalstep++;
+                n-=a;
             }
-            else if (sum < k) {
-                l++;
-            } else {
-                r--; 
+            if(n> 0){
+                totalstep++;
+                n-=b;
             }
-        }
-        cout<<cnt<<endl; 
+            if(n> 0){
+                totalstep++;
+                n-=c;
+            }
+        cout<<totalstep<<endl;
     }
 }
